@@ -35,8 +35,7 @@ Project includes the following files:
 #### 2. Project code (main.cpp)
 
 The main.cpp file contains code for the following set of tasks:
-* Read/load map data to acquire highway waypoint data [Link](./src/main.cpp#L33-L59)
-* Connect to highway simulator using [micro-websocket](https://github.com/uNetworking/uWebSockets). Websocket handles two-way data transfer between planner and simulator
+* Connect to race-track simulator using [micro-websocket](https://github.com/uNetworking/uWebSockets). Websocket handles two-way data transfer between planner and simulator
 
 #### Sensing (Telemetry)
 Gather below listed data from simulator [Link](./src/main.cpp#L80-L102):
