@@ -71,6 +71,5 @@ Gather below listed data from simulator [Link](./src/main.cpp#L80-L102):
   - In addition, irrespective of the number of new waypoints added to the new path trajectory, the combined distance of the newly added waypoints is a fixed length of 30 meters
 
 #### Next Steps and Future Updates
-* In the presence of other car ahead of ego car, the ego-car does not smoothly follow the other car. Improvize the logic, may be maintain a constant pre-set distance to the other car
-* May be explore to implement finite state machines
+* Try to auto-tune PID parameters using algorithms such as Coordinate Ascent (Twiddle) or Stochastic Gradient Descent to further maximize vehicle speed
 
