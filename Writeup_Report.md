@@ -71,5 +71,5 @@ Gather below listed data from simulator [Link](./src/main.cpp#L80-L102):
   - In addition, irrespective of the number of new waypoints added to the new path trajectory, the combined distance of the newly added waypoints is a fixed length of 30 meters
 
 #### Next Steps and Future Updates
-* Try to auto-tune PID parameters using algorithms such as Coordinate Ascent (Twiddle) or Stochastic Gradient Descent to further maximize vehicle speed
+* Auto-tune PID parameters using algorithms such as Coordinate Ascent (Twiddle) or Stochastic Gradient Descent to further maximize vehicle speed
 
