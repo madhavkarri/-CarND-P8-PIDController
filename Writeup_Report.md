@@ -10,12 +10,10 @@ Implement a PID controller in C++ to maneuver the vehicle/car around a race trac
 The Project
 ---
 The goals/steps for this project:
-* Ego-car should maintain vehicle speed close to 50 mph, whenever possible
-* Ego-car must avoid hitting other cars during all manuvers
-* Ego-car must drive inside of the marked road lanes, except when changing lanes
-* Ego-car must atleast complete one complete loop around the 6946 (m) length of highway
-* Ego-car should take a little over 5 minutes to complete 1 loop
-* Ego-car must maintain: (acceleration < 10 m/s^2) and (jerk: rate of change of acceleration < 10 m/s^3)
+* Build a PID controller and tune the PID hyperparameters
+* Test the tuned PID controller on the vehicle/race-track simulator
+* Vehicle must successfully drive a lap around the track
+* There is no minimum vehicle speed criteria. However, maximize vehicle speed by tuning the PID parameters
 
 
 [//]: # (Image References)
