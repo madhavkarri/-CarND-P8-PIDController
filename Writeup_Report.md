@@ -1,11 +1,11 @@
 # **Self-Driving Car Engineer**
-# **Project: Highway Driving Path Planning**
+# **Project: PID Controller**
 
 ## MK
 
 Overview
 ---
-Develop a path planner in c++ to safely navigate around a virtual 3 lane highway with other traffic that is driving +/-10 MPH of the 50 MPH speed limit. A successful path planner would keep inside its lane, avoid hitting other cars, and pass slower moving traffic using localization, sensor fusion, and map data.
+Implement a PID controller in C++ to maneuver the vehicle/car around a race track. The car and race track simulator provides cross-track-error (CTE) and velocity (mph) to compute steering angle correction. Corrected steering angle maintains the car stay inside of the track lane.
 
 The Project
 ---
