@@ -45,7 +45,7 @@ The main.cpp file contains code for the following set of tasks:
   - Integral Error: Ki * \int\limits_a^b; Kp: Integral gain constanti_error = Ki * sum_cte;  
   d_error = Kd * (cte - pre_cte);
   
-```python
+```
 \begin{align}
 \dot{x} & = \sigma(y-x) \\
 \dot{y} & = \rho x - y - xz \\
