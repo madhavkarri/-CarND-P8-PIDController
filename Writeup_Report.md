@@ -45,7 +45,13 @@ The main.cpp file contains code for the following set of tasks:
   - Integral Error: Ki * \int\limits_a^b; Kp: Integral gain constanti_error = Ki * sum_cte;  
   d_error = Kd * (cte - pre_cte);
   
-
+```python
+\begin{align}
+\dot{x} & = \sigma(y-x) \\
+\dot{y} & = \rho x - y - xz \\
+\dot{z} & = -\beta z + xy
+\end{align}
+```
 #### Next Steps and Future Updates
 * Auto-tune PID parameters using algorithms such as Coordinate Ascent (Twiddle) or Stochastic Gradient Descent to further maximize vehicle speed
 
