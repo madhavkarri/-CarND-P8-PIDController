@@ -19,7 +19,6 @@ The goals/steps for this project:
 [//]: # (Image References)
 
 [image1]: ./Writeup_IV/HDPP_FRS.png "HDPP_FRS"
-
 ---
 ### Files Submitted
 
