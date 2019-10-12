@@ -5,7 +5,7 @@
 
 Overview
 ---
-Implement a PID controller in C++ to maneuver the vehicle/car around a race track. The car and race track simulator provides cross-track-error (CTE) and velocity (mph) to compute steering angle correction. Corrected steering angle maintains the car stay inside of the track lane.
+Implement a Proportional-Integral-Derivative (PID) controller in C++ to maneuver the vehicle/car around a race track. The car and race track simulator provides cross-track-error (CTE) and velocity (mph) to compute steering angle correction. Corrected steering angle maintains the car stay inside of the track lane.
 
 The Project
 ---
@@ -36,15 +36,15 @@ Project includes the following files:
 
 The main.cpp file contains code for the following set of tasks:
 * Connect to race-track simulator using [micro-websocket](https://github.com/uNetworking/uWebSockets). Websocket handles two-way data transfer between planner and simulator
-
-#### Sensing (Telemetry)
-Gather below listed data from simulator [Link](./src/main.cpp#L80-L102):
-* Ego car localization data
-* Previous unused path from the simulator
-* Localization data of other cars
-
-#### Prediction [Link](./src/main.cpp#L110-L165):
-* Based on data from sensing predict other cars localization with respect to ego car. Detect whether other cars are present ahead, left, right of ego car
+* Gather current vehicle parameters from simulator [Link](./src/main.cpp#L?-L?):
+  - Cross track error (CTE)
+  - Speed
+  - Steering angle
+* Calculate proprortional, integral, and derivative errors as follows:
+  - Proportional Error: Kp * CTE; Kp: Proprotional gain constant
+  - Integral Error: Ki * \int\limits_a^b; Kp: Integral gain constanti_error = Ki * sum_cte;  
+  d_error = Kd * (cte - pre_cte);
+  
 
 #### Next Steps and Future Updates
 * Auto-tune PID parameters using algorithms such as Coordinate Ascent (Twiddle) or Stochastic Gradient Descent to further maximize vehicle speed
