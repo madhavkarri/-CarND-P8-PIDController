@@ -62,6 +62,11 @@ Applying just P-controller can result in measured/sensed variable overshoot or u
 Although,the D-controller might mitigate or minimize the oscillatory behavior of the measured/sensed variable there might be a systemic bias error or residual error that might continue to persist. I-controller term is a correction term associated with minimizing or eliminating the residual error resulting from the inherent system bias or time history.
 ![][image2]
 
+#### 4. PID Parameter Tuning
+Attached video file showing completion of a single lap around the track was achieved using manual PID tuning. Initial guess or starting point was adapted from "Udacity knowledge hub." Using this initial guess, the final values of (Kp:0.2, Ki:0.001, and Kd:3) were arrived at after several iterations using 30 mph and a smooth ride as objectives.
+
+For throttle control, instead of using another PID control, it is controlled as a function of steering-control-PID output. If there is a high value of steering correction output, the throttle is lowered and conversely a low value of steering correction output, the throttle is increased.
+
 #### Next Steps and Future Updates
 * Auto-tune PID parameters using algorithms such as Coordinate Ascent (Twiddle) or Stochastic Gradient Descent to further maximize vehicle speed
 
