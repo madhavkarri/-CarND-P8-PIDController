@@ -15,7 +15,6 @@ The goals/steps for this project:
 * Vehicle must successfully drive a lap around the track
 * There is no minimum vehicle speed criteria. However, maximize vehicle speed by tuning the PID parameters
 
-
 [//]: # (Image References)
 
 [image1]: ./Writeup_IV/PD-Controller.png "PD-Controller"
@@ -29,13 +28,13 @@ The goals/steps for this project:
 Project includes the following files:
 * main.cpp contains all the relevant code to fine tune the PID paramerters and to control the vehicle inside the simulator
 * Writeup_Report.md summarizes the results
-* The final output video for the PID control using (Kp:0.2, Ki:0.001, and Kd:3). Final output video [Link](https://www.youtube.com/watch?v=G4B1sXR3a6I&t=10s)
+* The final output video for the PID control using (Kp:0.2, Ki:0.001, and Kd:3) [Link](https://www.youtube.com/watch?v=G4B1sXR3a6I&t=10s)
 
 #### 2. Project code (main.cpp)
 
-The main.cpp file contains code for the following set of tasks:
+The main.cpp file contains code for the following set of tasks [Link](./src/main.cpp#L?-L?):
 * Connect to race-track simulator using [micro-websocket](https://github.com/uNetworking/uWebSockets). Websocket handles two-way data transfer between planner and simulator
-* Gather current vehicle parameters from simulator [Link](./src/main.cpp#L?-L?):
+* Gather current vehicle parameters from simulator:
   - Cross track error (CTE)
   - Speed
   - Steering angle
