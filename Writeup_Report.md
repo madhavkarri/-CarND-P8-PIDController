@@ -42,16 +42,9 @@ The main.cpp file contains code for the following set of tasks:
   - Steering angle
 * Calculate proprortional, integral, and derivative errors as follows:
   - Proportional Error: Kp * CTE; Kp: Proprotional gain constant
-  - Integral Error: Ki * \int\limits_a^b; Kp: Integral gain constanti_error = Ki * sum_cte;  
-  d_error = Kd * (cte - pre_cte);
+  - Integral Error: Ki * SUM(CTE); Ki: Integral gain constant and SUM(CTE): Summation of all CTEs from time(t) = 0 to current t
+  - Differential/Derivative Error (Difference in CTEs between sucessive time steps) = Kd * (CTE - Previous-CTE); Kd:  Differential gain constant
   
-\\(
-\begin{align}
-\dot{x} & = \sigma(y-x) \\
-\dot{y} & = \rho x - y - xz \\
-\dot{z} & = -\beta z + xy
-\end{align}
-\\)
 
 #### Next Steps and Future Updates
 * Auto-tune PID parameters using algorithms such as Coordinate Ascent (Twiddle) or Stochastic Gradient Descent to further maximize vehicle speed
