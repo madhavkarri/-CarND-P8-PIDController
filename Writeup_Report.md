@@ -32,7 +32,7 @@ Project includes the following files:
 
 #### 2. Project code (main.cpp)
 
-The main.cpp file contains code for the following set of tasks [Link](./src/main.cpp#L?-L?):
+The main.cpp file contains code for the following set of tasks [Link](./src/main.cpp#L45-L125):
 * Connect to race-track simulator using [micro-websocket](https://github.com/uNetworking/uWebSockets). Websocket handles two-way data transfer between planner and simulator
 * Gather current vehicle parameters from simulator:
   - Cross track error (CTE)
