@@ -43,7 +43,9 @@ The main.cpp file contains code for the following set of tasks:
 * Calculate proprortional, integral, and derivative errors as follows:
   - Proportional Error: Kp * CTE; Kp: Proprotional gain constant
   - Integral Error: Ki * SUM(CTE); Ki: Integral gain constant and SUM(CTE): Summation of all CTEs from time(t) = 0 to current t
-  - Differential/Derivative Error (Difference in CTEs between sucessive time steps) = Kd * (CTE - Previous-CTE); Kd:  Differential gain constant
+  - Differential/Derivative Error (Difference in CTEs between successive time steps) = Kd * (CTE - Previous-CTE); Kd:  Differential gain constant
+* Calculate total-error/correction, which is the sum of Proportional, Integral, and Differential errors
+* Apply total-error/correction as a steering angle adjustment to move the vehicle within lane boundaries
   
 
 #### Next Steps and Future Updates
