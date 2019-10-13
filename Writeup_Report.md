@@ -49,14 +49,11 @@ The main.cpp file contains code for the following set of tasks:
   
 #### 3. PID Control
 
-PID-controller (PID) is a feedback-loop control mechanism. PID continuously predicts the current error estimate: difference between the set-point/reference and measured/sensed variables. Based on the current error estimate it applies a correction (total error) based on proportional, integral, and derivative terms.
+PID-controller (PID) is a feedback-loop control mechanism. PID continuously predicts the current error estimate: difference between the set-point/reference and measured/sensed variables and based on the current error estimate it applies a control correction based on proportional, integral, and derivative components of the total error.
 
-
-Proportional term is a correction term corresponding to current error estimate: difference between reference and sensed variables. 
-
-Integral term is a correction term associated with the total accumulated error through all the previous time steps. Integral term can also be used as a correction factor for inherent bias error within the system.
-
-Derivative term is a correction term associated with the current rate of change in error or the sensed variable itself. A control effect to minimize future trend of (Reference-Measured) estimate.
+* Proportional term is a correction term corresponding to current error estimate: difference between reference and sensed variables. 
+* Integral term is a correction term associated with the total accumulated error through all the previous time steps. Integral term can also be used as a correction factor for inherent bias error within the system.
+* Derivative term is a correction term associated with the current rate of change in error or the sensed variable itself. A control effect to minimize future trend of (reference variable -measured variable) estimate.
 
 It is not necessary to apply PID control to all systems. Some of the systems can be controlled by just P-controller or PD-controller or PI controller depending on the system behavior.
 
