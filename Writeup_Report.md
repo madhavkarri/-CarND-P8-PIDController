@@ -47,6 +47,22 @@ The main.cpp file contains code for the following set of tasks:
 * Calculate total-error/correction, which is the sum of Proportional, Integral, and Differential errors
 * Apply total-error/correction as a steering angle adjustment to move the vehicle within lane boundaries
   
+#### 3. PID Control
+
+PID-controller (PID) is a feedback-loop control mechanism. PID continuously predicts the current error estimate: difference between the set-point/reference and measured/sensed variables. Based on the current error estimate it applies a correction (total error) based on proportional, integral, and derivative terms.
+
+
+Proportional term is a correction term corresponding to current error estimate: difference between reference and sensed variables. 
+
+Integral term is a correction term associated with the total accumulated error through all the previous time steps. Integral term can also be used as a correction factor for inherent bias error within the system.
+
+Derivative term is a correction term associated with the current rate of change in error or the sensed variable itself. A control effect to minimize future trend of (Reference-Measured) estimate.
+
+It is not necessary to apply PID control to all systems. Some of the systems can be controlled by just P-controller or PD-controller or PI controller depending on the system behavior.
+
+Applying just P-controller can result in measured/sensed variable overshoot or undershoot the reference variable and consequently resulting in an oscillatory behavior. The D-controller term helps mitigate this effect by appropriate correction for the rate change of error. Below image shows the effect of just using P-controller versus PD-controller.
+
+Although,the D-controller might mitigate or minimize the oscillatory behavior of the measured/sensed variable there might be a systemic bias error or residual error that might continue to persist. I-controller term is a correction term associated with minimizing or eliminating the residual error resulting from the inherent system bias or time history.
 
 #### Next Steps and Future Updates
 * Auto-tune PID parameters using algorithms such as Coordinate Ascent (Twiddle) or Stochastic Gradient Descent to further maximize vehicle speed
