@@ -47,7 +47,7 @@ The main.cpp file contains code for the following set of tasks [Link](./src/main
   
 #### 3. PID Control
 
-PID-controller (PID) is a feedback-loop control mechanism. PID continuously predicts the current error estimate: difference between the set-point/reference and measured/sensed variables and based on the current error estimate it applies a control correction based on proportional, integral, and derivative components of the total error.
+PID-controller (PID) is a feedback-loop control mechanism. PID continuously predicts the current error estimate: difference between the set-point/reference and measured/sensed variables, and based on the current error estimate it applies a control correction based on proportional, integral, and derivative components of the total error.
 
 * Proportional term is a correction term corresponding to current error estimate: difference between reference and sensed variables. 
 * Integral term is a correction term associated with the total accumulated error through all the previous time steps. Integral term can also be used as a correction factor for inherent bias error within the system.
