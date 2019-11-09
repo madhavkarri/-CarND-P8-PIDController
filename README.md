@@ -27,7 +27,7 @@ The goals/steps for this project:
 
 Project includes the following files:
 * main.cpp contains all the relevant code to fine tune the PID paramerters and to control the vehicle inside the simulator
-* Writeup_Report.md summarizes the results
+* README.md summarizes the results
 * The final output video for the PID control using (Kp:0.2, Ki:0.001, and Kd:3) [Link](https://youtu.be/H5SExiFU1oo)
 
 #### 2. Project code (main.cpp)
