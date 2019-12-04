@@ -3,7 +3,6 @@
 
 ## MK
 
-#
 Overview
 
 Implement a Proportional-Integral-Derivative (PID) controller in C++ to maneuver the vehicle/car around a race track. The car and race track simulator provides cross-track-error (CTE) and velocity (mph) to compute steering angle correction. Corrected steering angle maintains the car stay inside of the track lane.
